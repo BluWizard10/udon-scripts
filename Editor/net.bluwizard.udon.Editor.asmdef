@@ -1,0 +1,18 @@
+{
+    "name": "net.bluwizard.udon.Editor",
+    "rootNamespace": "",
+    "references": [
+        "net.bluwizard.udon"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

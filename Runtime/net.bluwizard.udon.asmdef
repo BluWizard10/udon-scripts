@@ -1,0 +1,21 @@
+{
+    "name": "net.bluwizard.udon",
+    "rootNamespace": "",
+    "references": [
+        "VRC.Udon",
+        "VRC.Udon.Editor",
+        "VRC.Udon.Serialization.OdinSerializer",
+        "UdonSharp.Runtime",
+        "UdonSharp.Lib",
+        "UdonSharp.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

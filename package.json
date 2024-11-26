@@ -1,0 +1,17 @@
+{
+  "name": "net.bluwizard.udon",
+  "displayName": "BluWizard LABS - Udon Templates",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "Collection of Udon Scripts I've created.",
+  "hideInEditor": false,
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": "^3.7.0"
+  },
+  "author": {
+    "name": "BluWizard",
+    "email": "17975114+BluWizard10@users.noreply.github.com",
+    "url": "https://bluwizard.net"
+  }
+}
