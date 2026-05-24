@@ -6,7 +6,7 @@ using VRC.Udon;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [RequireComponent(typeof(Collider)), UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class PlayerColliderExitOnly : UdonSharpBehaviour
@@ -24,7 +24,7 @@ namespace BluWizard.Udon
             {
                 if (playerApi.isLocal)
                 {
-                    exitReceiver.SendCustomEvent(customExitName);
+                    if (exitReceiver != null) exitReceiver.SendCustomEvent(customExitName);
                 }
             }
         }

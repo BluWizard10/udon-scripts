@@ -6,7 +6,7 @@ using VRC.Udon;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class ObjectTeleport : UdonSharpBehaviour
@@ -19,7 +19,7 @@ namespace BluWizard.Udon
 
         public void _BluEvent()
         {
-            targetGameObject.transform.SetPositionAndRotation(teleportTarget.position, teleportTarget.rotation);
+            if (targetGameObject != null && teleportTarget != null) targetGameObject.transform.SetPositionAndRotation(teleportTarget.position, teleportTarget.rotation);
         }
     }
 }

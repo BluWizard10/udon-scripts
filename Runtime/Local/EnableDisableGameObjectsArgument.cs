@@ -7,7 +7,7 @@ using VRC.Udon;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class EnableDisableGameObjectsArgument : UdonSharpBehaviour
@@ -22,14 +22,20 @@ namespace BluWizard.Udon
 
         public void _BluEvent()
         {
-            foreach (GameObject enable in toEnable)
+            if (toEnable != null)
             {
-                enable.SetActive(true);
+                foreach (GameObject enable in toEnable)
+                {
+                    if (enable != null) enable.SetActive(true);
+                }
             }
 
-            foreach (GameObject disable in toDisable)
+            if (toDisable != null)
             {
-                disable.SetActive(false);
+                foreach (GameObject disable in toDisable)
+                {
+                    if (disable != null) disable.SetActive(false);
+                }
             }
         }
     }  

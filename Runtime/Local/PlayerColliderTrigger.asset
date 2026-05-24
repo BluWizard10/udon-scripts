@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: PlayerColliderTrigger
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: d4ae9c2816032b7499e182541d4375f9,
-    type: 2}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: f76bc9066d3a1164facf226a4a6614cb, type: 2}
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 7dfdd97581ec03e499b078416d6a7bb5, type: 3}
@@ -21,7 +20,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 0
-  scriptID: -616211564266584948
+  scriptID: -2830472926639480421
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

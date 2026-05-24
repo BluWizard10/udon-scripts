@@ -2,7 +2,11 @@
     "name": "net.bluwizard.udon.Editor",
     "rootNamespace": "",
     "references": [
-        "net.bluwizard.udon"
+        "net.bluwizard.udon",
+        "VRC.Udon",
+        "VRC.Udon.Editor",
+        "UdonSharp.Runtime",
+        "UdonSharp.Editor"
     ],
     "includePlatforms": [
         "Editor"

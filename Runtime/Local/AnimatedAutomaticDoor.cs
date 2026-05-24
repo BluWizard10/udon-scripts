@@ -7,7 +7,7 @@ using VRC.Udon.Common.Interfaces;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [RequireComponent(typeof(Collider)), UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class AnimatedAutomaticDoor : UdonSharpBehaviour
@@ -34,7 +34,7 @@ namespace BluWizard.Udon
     
         public void TriggerAnim()
         {
-            animator.SetBool(exitBool, true);
+            if (animator != null) animator.SetBool(exitBool, true);
         }
     
         public override void OnPlayerTriggerEnter(VRCPlayerApi playerApi)
@@ -43,7 +43,7 @@ namespace BluWizard.Udon
             {
                 if (playerApi.isLocal)
                 {
-                    animator.SetBool(enterBool, true);
+                    if (animator != null) animator.SetBool(enterBool, true);
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace BluWizard.Udon
             {
                 if (playerApi.isLocal)
                 {
-                    animator.SetBool(exitBool, false);
+                    if (animator != null) animator.SetBool(exitBool, false);
                     exitSequence = true;
                 }
             }

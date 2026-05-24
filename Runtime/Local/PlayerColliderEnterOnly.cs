@@ -7,7 +7,7 @@ using VRC.Udon.Common.Interfaces;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [RequireComponent(typeof(Collider)), UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class PlayerColliderEnterOnly : UdonSharpBehaviour
@@ -25,7 +25,7 @@ namespace BluWizard.Udon
             {
                 if (playerApi.isLocal)
                 {
-                    enterReceiver.SendCustomEvent(customEnterName);
+                    if (enterReceiver != null) enterReceiver.SendCustomEvent(customEnterName);
                 }
             }
         }

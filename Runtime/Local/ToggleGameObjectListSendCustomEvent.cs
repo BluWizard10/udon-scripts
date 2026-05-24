@@ -7,7 +7,7 @@ using VRC.Udon;
 
 // Written by BluWizard - https://github.com/BluWizard10
 
-namespace BluWizard.Udon
+namespace BluWizard.Udon.Local
 {
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class ToggleGameObjectListSendCustomEvent : UdonSharpBehaviour
@@ -23,11 +23,14 @@ namespace BluWizard.Udon
 
         public void _BluEvent()
         {
-            foreach (GameObject targetObject in targetObjects)
+            if (targetObjects != null)
             {
-                targetObject.SetActive(!targetObject.activeSelf);
+                foreach (GameObject targetObject in targetObjects)
+                {
+                    if (targetObject != null) targetObject.SetActive(!targetObject.activeSelf);
+                }
             }
-            TargetUdonBehaviour.SendCustomEvent(customEventName);
+            if (TargetUdonBehaviour != null) TargetUdonBehaviour.SendCustomEvent(customEventName);
         }
     }
 }

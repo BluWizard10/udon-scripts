@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: DisableGameObjectsArgument
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 8060728ec6bcd77409808ab963b481bd,
-    type: 2}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: b01e394faafe2ef47bbd76d007a037ac, type: 2}
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: cf04222f6f4790945b8136dede4280fd, type: 3}
@@ -21,7 +20,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 0
-  scriptID: -7087566479603315396
+  scriptID: 2392515596178617971
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

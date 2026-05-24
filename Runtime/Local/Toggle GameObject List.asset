@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: Toggle GameObject List
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 0f0264d9111c60746bca65f06b977570,
-    type: 2}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 91c6e474902fb1e4394b28c22aa20d9f, type: 2}
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: bac32c36a97a9d94097880260f0a9aa4, type: 3}
@@ -21,7 +20,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 0
-  scriptID: 2820762114563569640
+  scriptID: -712220176918323239
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

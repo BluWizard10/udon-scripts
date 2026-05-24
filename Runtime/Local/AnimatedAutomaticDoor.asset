@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: AnimatedAutomaticDoor
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: b2bb79d8d49c8b041bfe57ce98609528,
-    type: 2}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 2b422ced19cb6ba4b9cb50baf6761cf0, type: 2}
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 5d07774aed9aab849b9daf7600ed2c53, type: 3}
@@ -21,7 +20,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 0
-  scriptID: -5154919693580055296
+  scriptID: -9211299807823985273
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
