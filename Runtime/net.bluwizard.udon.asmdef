@@ -1,6 +1,6 @@
 {
     "name": "net.bluwizard.udon",
-    "rootNamespace": "",
+    "rootNamespace": "BluWizard.Udon",
     "references": [
         "VRC.Udon",
         "VRC.Udon.Editor",
